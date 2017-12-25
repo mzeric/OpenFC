@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <inttypes.h>
 
-#define DEG2RAD0.017453293F
+#define DEG2RAD    0.017453293F
 
 typedef struct {
 	float x,y,z;
