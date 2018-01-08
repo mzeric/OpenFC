@@ -36,15 +36,25 @@ after launch `openocd -f stm32_swo.cfg`
 
 `tail -f swo.log ` and you will watch the output scroll
 
-
-# HardWare
+# Design Decision
+* Porting RTEMS
+* Setup Debug functions
+* Sensors Fusion (MPU9250)
+* Camera Optical Flow (OpenMV) setup
+## HardWare
 * STM32F4 mini/discovery board
 * MPU9250 9DOF model
 
-# Software
+## Software
 * rtems multi task
-* I2C driver
-# Algorithm
+* bsp driver
+## Algorithm
 * complement filter
 * extended kalman filter
 * PID
+
+## Current progress
+* RTEMS Bootup finished
+* debug message through swo & rtt
+* setup openocd and gdb
+* PID & Kalman Filter Prototype with python
