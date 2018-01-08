@@ -55,6 +55,5 @@ after launch `openocd -f stm32_swo.cfg`
 
 ## Current progress
 * RTEMS Bootup finished
-* debug message through swo & rtt
-* setup openocd and gdb
+* test swo & rtt driver
 * PID & Kalman Filter Prototype with python
